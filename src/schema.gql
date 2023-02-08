@@ -6,5 +6,7 @@ type Query {
   """Retorna Hola Mundo"""
   saludo: String!
   randomNumber: Float!
-  randomFromZeroTo: Int!
+
+  """From zero to argument TO (default 6)"""
+  randomFromZeroTo(to: Int): Int!
 }
